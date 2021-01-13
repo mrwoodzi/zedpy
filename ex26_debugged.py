@@ -1,5 +1,5 @@
-from sys import argv   # py ex25_debugged.py ex15_sample.txt
-
+from sys import argv  
+script, filename = argv  # py ex25_debugged.py ex15_sample.txt to run 
 
 print("How old are you?", end=' ')
 age = input()
@@ -9,7 +9,7 @@ print("How much do you weigh?", end=' ')
 weight = input()
 print(f"So, you're {age} old, {height} tall and {weight} heavy.")
 
-script, filename = argv
+
 
 txt = open(filename)
 
@@ -53,7 +53,7 @@ def secret_formula(started):
 
 
 start_point = 10000
-beans, jars = secret_formula(start_point)
+beans, jars, crates = secret_formula(start_point)
 
 # remember that this is another way to format a string
 print("With a starting point of: {}".format(start_point))
@@ -87,7 +87,7 @@ if people > dogs:
     print("The world is dry!")
 
 
-
+dogs += 5
 
 if people >= dogs:
     print("People are greater than or equal to dogs.")

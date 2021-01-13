@@ -53,7 +53,7 @@ def secret_formula(started) #needs a colon :
 
 
 start_point = 10000
-beans, jars = secret_formula(start_point)
+beans, jars = secret_formula(start_point) # missing crates from secret formula
 
 # remember that this is another way to format a string
 print("With a starting point of: {}".format(start_point))
@@ -87,7 +87,7 @@ if people > dogs                      # No colon :
     print("The world is dry!")
 
 
-dogs += 5                          # dogs has already been given a variable
+dogs += 5                          
 
 if people >= dogs:
     print("People are greater than or equal to dogs.")
