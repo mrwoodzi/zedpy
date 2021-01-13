@@ -9,12 +9,12 @@ def sort_words(words):# this puts words into a list [ , , , ,] in alphabetical o
 
 def print_first_word(words):
     """Prints the first word after popping off"""
-    word = words.pop(0)
-    print(word) 
+    word = words.pop(0)# .pop(0) the 0 is using slicing to tell function what first word is
+    print(word) #prints words.pop(0)
 
 def print_last_word(words):
     """Prints the last word after popping it off."""
-    word = words.pop(-1)#Pop pops you to end/last word, I wonder if you can push to the beginning
+    word = words.pop(-1)#Pop pops you to end/last word via -1 slice
     print(word)#this prints the popped word
 
 def sort_sentence(sentence):
@@ -30,6 +30,6 @@ def print_first_and_last(sentence):
 
 def print_first_and_last_sorted(sentence):
     """Sorts the words then prints the first and last one."""
-    words = sort_sentence(sentence)
-    print_first_word(words)
-    print_last_word(words)
+    words = sort_sentence(sentence) #uses function to break into list then sort in alphabetical worder
+    print_first_word(words) #prints first word of sort_sentence
+    print_last_word(words)#prints last word of sort_sentence
