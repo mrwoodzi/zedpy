@@ -1,6 +1,6 @@
-people = 30
+people = 40
 cars = 40
-trucks = 15
+trucks = 40
 
 #Is testing wether something is true and if so prints that
 if cars > people: #asks if this is true, in this case yes so prints "We should take the cars."
