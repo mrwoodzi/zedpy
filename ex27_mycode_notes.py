@@ -1,3 +1,6 @@
+#As stated below
+
+
 print("\n")
 print("\tZed did not code this exercise. \n\tI am writing it for practice and memorization.")
 print("\tZed calls this logic.")
@@ -53,6 +56,9 @@ print("\tif this (1) != this over here    (0)        = True")
 print("\tif this (0) != is the same as the other (0)  =False\n")
 
 print("\t\t==")
-print("If both things match = TRUE")
+print("If both things match = TRUE\n\n")
 
-print("Notes Condensed")
+print("\t\tNotes Condensed\n")
+
+print("""    {NOT, OR, AND, NOT_OR, NOT_AND} =
+    {(), T(T=T), F(F=F), F(F2=T), T(T2=F)}\n""")
