@@ -54,3 +54,5 @@ print("\tif this (0) != is the same as the other (0)  =False\n")
 
 print("\t\t==")
 print("If both things match = TRUE")
+
+print("Notes Condensed")
