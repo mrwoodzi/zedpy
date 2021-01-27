@@ -37,12 +37,12 @@ elif door == "2":
         print("Good job!")
 
 
-elif == "3":
+elif door == "3":
     print("You see a tuba.")
     print("1. You try to play the tuba.")
     print("2. You quickly slam the door.")
 
-    tuba == input("> ")
+    tuba = input("> ")
 
     if tuba == "1":
         print("You hit the brown note and crap yourself!")
@@ -51,12 +51,12 @@ elif == "3":
         print("Roger Bobo and Chester Schmits show up and proceed to teach you how to circular breath.")
         print("Maybe you should have played tuba, it would help with your constipation.")
 
-elif == "4":
+elif door == "4":
     print("You see a saxophone.")
     print("1. You try to play the saxophone.")
     print("2. You quickly slam the door because you think Kenny G might be in the room.")
 
-    saxphone == input("> ")
+    saxophone = input("> ")
 
     if saxophone == "1":
         print("You worst fears are realzied as you transform into Kenny G.")
@@ -67,19 +67,18 @@ elif == "4":
         print("George Michael shows up and hands you a saxophone.")
         print("A life goal is then fulfilled as you play Careless Whisper on saxophone with George Michael singing.")
 
-elif == "5" :
+elif door == "5":
     print("You see a keyboard guitar.")
     print("1. You try to play the keyboard guitar.")
     print("2. You see a Flock of Seagulls.")
 
-    keyboard == input("> ")
+    keyboard = input("> ")
 
-    if keyboard == ("1")
+    if keyboard == ("1"):
         print("You then cut your hair like the guys in A Flock of Seagulls and join an 80's New Wave tribute band.")
         print("All life goals are fulfilled.")
         print("You die a happy.")
         
-
     else:
         print("And you raaaaaan, you ran so far aaa-waa-aaaay")
         print("Good job.")
