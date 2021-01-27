@@ -6,6 +6,7 @@
 #He only coded the boolean examples to be run individually
 #>>>True and True
 #True
+
 Que_1 = True and True #true
 print(f"1. true {Que_1}")
 Que_2 = False and True #false
