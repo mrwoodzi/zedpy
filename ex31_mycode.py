@@ -81,6 +81,7 @@ elif door == "5":
         
     else:
         print("And you raaaaaan, you ran so far aaa-waa-aaaay")
+        print("While running you get hit by a Delorean and die.")
         print("Good job.")
 
 
