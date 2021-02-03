@@ -29,7 +29,7 @@ print("\n")
 # more_hertz = list(map(add, hertz_change, brownnote_hertz)) 
 # my py didn't like add so let's try something else
 
-more_hertz = [sum(i) for i in zip(brownnote_hertz, hertz_change)]  
+more_hertz = [sum(i) for i in zip(brownnote_hertz, hertz_change)]  # I don't know what the i does in this
 # It works this way, maybe because it's all kept in a list
 for more in more_hertz:
     print(f"\t{more} is another brown note frequency that can be hit.")
