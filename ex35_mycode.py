@@ -10,10 +10,10 @@ def gold_room():
         dead("Man, learn to type a number.") 
 
     if how_much < 50:
-        print("Nice, you're not greedy, you win!")
-        exit(0) # this automatically exits the program without throwing an error
+        print("Nice, you're not greedy!")
+        alive()
     else:
-        dead("You greedy bastard!")
+        dead("You greedy bastard, A cave troll shows up and eats your head off.")
 
 
 def bear_room():
@@ -55,9 +55,12 @@ def cthulu_room():
     else:
         cthulu_room()
 
+def alive(): # I added this so you can have a clear game win
+    print("You Win!")
+    exit(0)
 
 def dead(why):
-    print(why,"Your Dead!" '\n"Good,job!"') # I added Your Dead! so the user knows they failed
+    print(why,"Your Dead!") # I added Your Dead! so the user knows they failed
     exit(0)
 
 def start():
