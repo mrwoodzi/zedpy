@@ -76,6 +76,8 @@ def start():
         cthulu_room()
     elif choice == "tuba": # this is a cheat to win the game
         alive()
+    elif choice == "keytar":
+        alive()
     else:
         dead("You stumble around the room until you starve.")
         
