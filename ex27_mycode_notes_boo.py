@@ -18,7 +18,7 @@ print("\n")
 print('\tThese operators are asking "Is this TRUE?"')
 print('\n')
 
-print("NOT")
+print("\t\tNOT")
 print("\t not false = TRUE")
 print("\t not true  = FALSE\n")
 print("\t\tOR")

@@ -1,6 +1,6 @@
-from sys import exit
+from sys import exit # from <module> import <x>
 
-def gold_room():
+def gold_room(): 
     print("This room is full of gold. How much do you take?")
 
     choice = input("> ")
@@ -13,7 +13,7 @@ def gold_room():
         print("Nice, you're not greedy!")
         alive()
     else:
-        dead("You greedy bastard, A cave troll shows up and eats your head off.")
+        dead("You greedy bastard, A cave troll shows up and eats your face off.") # this <dead(why)> allows the function to assign a print statement
 
 
 def bear_room():
@@ -51,9 +51,9 @@ def cthulu_room():
     if "flee" in choice: #as long as "flee" is in the input it head work
         start()
     elif "head" in choice: # as long as "head" is in the input it head work
-        dead("Well that was tasty!")
+        dead("Well that was tasty!") # goes to dead function
     else:
-        cthulu_room()
+        cthulu_room()# send you back to the top of the cthulu room
 
 def alive(): # I added this so you can have a clear game win
     print("You Win!")
@@ -74,6 +74,8 @@ def start():
         bear_room()
     elif choice == "right":
         cthulu_room()
+    elif choice == "tuba": # this is a cheat to win the game
+        alive()
     else:
         dead("You stumble around the room until you starve.")
         
