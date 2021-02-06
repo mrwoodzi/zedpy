@@ -1,4 +1,7 @@
 from sys import exit # from <module> import <x>
+# I need to add an A-Ha/Take on Me reference
+# finish keytar_room
+
 
 def gold_room(): 
     print("This room is full of gold. How much do you take?")
@@ -47,7 +50,7 @@ def cthulu_room():
 
     choice = input("> ")
 
-    if "flee" in choice: #as long as "flee" is in the input it head work
+    if "flee" in choice: #as long as "flee" is in the input or head it will work
         start()
     elif "head" in choice: # as long as "head" is in the input head you can write other things 
         dead("Well that was tasty!") # goes to dead function
@@ -55,18 +58,30 @@ def cthulu_room():
         cthulu_room()# send you back to the top of the cthulu room
 
 def keytar_room():
-    print("You see a flock of Seagulls and a keytar.")
-    print("Do you immediately decide to get a hair cut or play the keytar.")
+    print("You see a Flock of Seagulls and a keytar.")
+    print("Do you get a hair cut or play the keytar.")
 
     choice = input("> ")
 
     if "get a hair cut" == choice:
+        print("After your hair cut you start running."
+        print("""You run until it's midnight and you hear someoone yelling "Come on Eileen."""")
+        print("Do you run towards Eileen or keep running")
+            
+            choice = inpu("> ")
 
-    elif "keytar" in choice:
+            if "Eileen" in choice:
+                alive()
+            elif:
+                print("A Flock of Seagulls attacks and eats you alive.")
+                dead()
+
+    elif "play the keytar" == choice:
+        
 
     else:
         print("You get dizzy and black out.") 
-        print("You feel like you were just in this room, kinda like the move Groundhog day.")
+        print("You feel like you were just in this room, kinda like the movie Groundhog day.")
         keytar_room()
 
 
