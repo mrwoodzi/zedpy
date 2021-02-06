@@ -58,7 +58,16 @@ def keytar_room():
     print("You see a flock of Seagulls and a keytar.")
     print("Do you immediately decide to get a hair cut or play the keytar.")
 
-    choice - input("> ")
+    choice = input("> ")
+
+    if "get a hair cut" == choice:
+
+    elif "keytar" in choice:
+
+    else:
+        print("You get dizzy and black out.") 
+        print("You feel like you were just in this room, kinda like the move Groundhog day.")
+        keytar_room()
 
 
 def alive(): # I added this so you can have a clear game win
