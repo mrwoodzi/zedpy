@@ -40,7 +40,6 @@ def bear_room():
         else:
             print("What do you want to do?")
 
-
 def cthulu_room():
     print("Here you see the great evil Cthulu.")
     print("He, It, whatever stares at you and you go insane.")
@@ -50,10 +49,17 @@ def cthulu_room():
 
     if "flee" in choice: #as long as "flee" is in the input it head work
         start()
-    elif "head" in choice: # as long as "head" is in the input it head work
+    elif "head" in choice: # as long as "head" is in the input head you can write other things 
         dead("Well that was tasty!") # goes to dead function
     else:
         cthulu_room()# send you back to the top of the cthulu room
+
+def keytar_room():
+    print("You see a flock of Seagulls and a keytar.")
+    print("Do you immediately decide to get a hair cut or play the keytar.")
+
+    choice - input("> ")
+
 
 def alive(): # I added this so you can have a clear game win
     print("You Win!")
@@ -74,10 +80,10 @@ def start():
         bear_room()
     elif choice == "right":
         cthulu_room()
-    elif choice == "tuba": # this is a cheat to win the game
+    elif choice == "tuba": # this is a cheat to win the game out right
         alive()
     elif choice == "keytar":
-        alive()
+        keytar_room()
     else:
         dead("You stumble around the room until you starve.")
         

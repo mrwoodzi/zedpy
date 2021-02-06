@@ -16,7 +16,7 @@ def gold_room():
         dead("You greedy bastard!")
 
 
-def bear_room():
+def bear_room(): # the bear room uses <==> which means the users choice must exactly be <"taunt bear"> to work not just bear as with an "in"
     print("There is a bear here.")
     print("The bear has a bunch of honey.")
     print("The fat bear is in front of another door.")
@@ -25,8 +25,7 @@ def bear_room():
 
     while True:
         choice = input("> ") # I have no idea how to know what the options are to remove bear, needs a help
-        if choice == "help":
-            print("""You can "take honey" or "taunt bear".""")
+        
         if choice == "take honey": # this has to be worded "take honey" or it won't work
             dead("The bear looks at you then slaps your face off.")
         elif choice == "taunt bear" and not bear_moved:# has to be "taunt bear"
@@ -38,10 +37,10 @@ def bear_room():
         elif choice == "open door" and bear_moved:
             gold_room()
         else:
-            print("What do you want to do?")
+            print("I got no idea what that means.")
 
 
-def cthulu_room():
+def cthulu_room(): #choices are different in this room and zed used <in> and not <==> so as long as part of a word is in it will work 
     print("Here you see the great evil Cthulu.")
     print("He, It, whatever stares at you and you go insane.")
     print("Do you flee for you life or eat your head?")
@@ -58,7 +57,7 @@ def cthulu_room():
 
 def dead(why):
     print(why,"Your Dead!" '\n"Good,job!"') # I added Your Dead! so the user knows they failed
-    exit(0)
+    exit(0) # this is like a forced program end and the (0) means that no error will be thrown just a clean exit
 
 def start():
     print("You are in a dark room.")
@@ -72,7 +71,7 @@ def start():
     elif choice == "right":
         cthulu_room()
     else:
-        dead("You stumble around the room until you starve.")
+        dead("You stumble around the room until you starve.") #takes you to the dead module
         
         
 start()
