@@ -64,22 +64,23 @@ def keytar_room():
     choice = input("> ")
 
     if "get a hair cut" == choice:
-        print("After your hair cut you start running."
-        print("""You run until it's midnight and you hear someoone yelling "Come on Eileen."""")
+        print("After your hair cut you start running.")
+        print("""You run until it's midnight and you hear someoone yelling "Come on Eileen." """)
         print("Do you run towards Eileen or keep running")
             
-            choice = inpu("> ")
+        choice = input("> ")
 
-            if "Eileen" in choice:
-                alive()
-            elif:
-                print("A Flock of Seagulls attacks and eats you alive.")
-                dead()
-
+        if "Eileen" in choice:
+            alive()
+        else:
+            print("A Flock of Seagulls attacks and eats you alive.")
+            dead()
+    
     elif "play the keytar" == choice:
-        
-
-    else:
+        print("Ching Chang Chong Ching.")
+        print("Apparenttly you suck at keytar.")
+        dead()
+     else:
         print("You get dizzy and black out.") 
         print("You feel like you were just in this room, kinda like the movie Groundhog day.")
         keytar_room()
