@@ -80,7 +80,7 @@ def keytar_room():
         print("Ching Chang Chong Ching.")
         print("Apparenttly you suck at keytar.")
         dead()
-     else:
+    else:
         print("You get dizzy and black out.") 
         print("You feel like you were just in this room, kinda like the movie Groundhog day.")
         keytar_room()
