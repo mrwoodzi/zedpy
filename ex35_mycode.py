@@ -72,6 +72,8 @@ def keytar_room():
         choice = input("> ")
 
         if "Eileen" in choice:
+            print("While running Michael J. Fox picks you up in a Delorean.")
+            print("You go back to 1987 and go to a Dexy's Midnight Runners concert.")
             alive()
         else:
             print("The Flock of Seagulls attacks and eats you alive.")
@@ -96,7 +98,7 @@ def dead(why):
 
 def start():
     print("\n\tYou are in a dark room.")
-    print("\tThere is a door  to you right and left, a tuba and a keytar.")
+    print("\tThere is a door to you right and left, a tuba and a keytar.")
     print("\tWhich door do you take or which instrument to you play?")
 
     choice = input("> ")
@@ -105,7 +107,7 @@ def start():
         bear_room()
     elif choice == "right":
         cthulu_room()
-    elif choice == "tuba": # this is a cheat to win the game out right
+    elif choice == "tuba": 
         alive()
     elif choice == "keytar":
         keytar_room()
