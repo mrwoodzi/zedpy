@@ -58,8 +58,9 @@ def cthulu_room():
         cthulu_room()# send you back to the top of the cthulu room
 
 def keytar_room():
-    print("You see a Flock of Seagulls and a keytar.")
-    print("Do you get a hair cut or play the keytar.")
+    print("Ching Chang Chong Ching.")
+    print("You see a Flock of Seagulls.")
+    print("Do you get a hair cut or play more the keytar.")
 
     choice = input("> ")
 
@@ -73,13 +74,12 @@ def keytar_room():
         if "Eileen" in choice:
             alive()
         else:
-            print("A Flock of Seagulls attacks and eats you alive.")
-            dead()
+            print("The Flock of Seagulls attacks and eats you alive.")
+            dead("Your hair didn't protect you from the onslaght of birds.")
     
-    elif "play the keytar" == choice:
+    elif "play more keytar" == choice:
         print("Ching Chang Chong Ching.")
-        print("Apparenttly you suck at keytar.")
-        dead()
+        dead("Apparenttly you suck at keytar.")
     else:
         print("You get dizzy and black out.") 
         print("You feel like you were just in this room, kinda like the movie Groundhog day.")
@@ -95,9 +95,9 @@ def dead(why):
     exit(0)
 
 def start():
-    print("You are in a dark room.")
-    print("There is a door  to you right and left.")
-    print("Which one do you take?")
+    print("\n\tYou are in a dark room.")
+    print("\tThere is a door  to you right and left, a tuba and a keytar.")
+    print("\tWhich door do you take or which instrument to you play?")
 
     choice = input("> ")
 
