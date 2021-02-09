@@ -1,22 +1,23 @@
-from sys import exit
+from sys import exit # this imports a function from a module
 
-def gold_room():
+def gold_room(): # function for the gold_room
     print("This room is full of gold. How much do you take?")
 
     choice = input("> ")
     if "0" in choice or "1" in choice:
         how_much = int(choice)
     else:
-        dead("Man, learn to type a number.") 
+        dead("Man, learn to type a number.") # takes you to dead(why, ) the why
+        # requires you to put in a print statement
 
-    if how_much < 50:
+    if how_much < 50: # is a boo to test if how_much is less than 50
         print("Nice, you're not greedy, you win!")
         exit(0) # this automatically exits the program without throwing an error
     else:
-        dead("You greedy bastard!")
+        dead("You greedy bastard!") # takes to dead function
 
 
-def bear_room(): # the bear room uses <==> which means the users choice must exactly be <"taunt bear"> to work not just bear as with an "in"
+def bear_room(): 
     print("There is a bear here.")
     print("The bear has a bunch of honey.")
     print("The fat bear is in front of another door.")
@@ -25,7 +26,7 @@ def bear_room(): # the bear room uses <==> which means the users choice must exa
 
     while True:
         choice = input("> ") # I have no idea how to know what the options are to remove bear, needs a help
-        
+ # the bear room uses <==> which means the users choice must exactly be <"taunt bear"> to work not just bear as with an "in"       
         if choice == "take honey": # this has to be worded "take honey" or it won't work
             dead("The bear looks at you then slaps your face off.")
         elif choice == "taunt bear" and not bear_moved:# has to be "taunt bear"
