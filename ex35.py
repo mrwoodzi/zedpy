@@ -57,13 +57,13 @@ def cthulu_room(): #choices are different in this room and zed used <in> and not
 
 
 def dead(why):
-    print(why,"Your Dead!" '\n"Good,job!"') # I added Your Dead! so the user knows they failed
+    print(why,"\tYour Dead!" '\n"Good,job!"') # I added Your Dead! so the user knows they failed
     exit(0) # this is like a forced program end and the (0) means that no error will be thrown just a clean exit
 
 def start():
-    print("You are in a dark room.")
-    print("There is a door  to you right and left.")
-    print("Which one do you take?")
+    print("\tYou are in a dark room.")
+    print("\tThere is a door  to you right and left.")
+    print("\tWhich one do you take?")
 
     choice = input("> ")
 
